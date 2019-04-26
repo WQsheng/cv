@@ -8,10 +8,10 @@ from houghline import HoughLines
 np_array_lines = HoughLines(binary_image, rho=1, theta=np.pi/180)
 
 the function returns a 2-D numpy array(shape=n*3).
-[[line_rho1, line_theta1, line_length1],
- [line_rho2, line_theta2, line_length2],
- ...
- [line_rho_n, line_theta_n, line_length_n]]
+[[line_rho1, line_theta1, line_length1],\n
+ [line_rho2, line_theta2, line_length2],\n
+ ...\n
+ [line_rho_n, line_theta_n, line_length_n]]\n
  
 np_array_lines[np_array_lines[:, 2] > threshold] just returns the lines greater than threshold, like the opencv HoughLines
 function does.
