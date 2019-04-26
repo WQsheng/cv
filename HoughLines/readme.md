@@ -3,9 +3,11 @@ Impliment the function HoughLines() using Cython(python code with c-type objects
 Because the opencv HoughLines function only returns the lines greater than threshold, this function here returns all the lines 
 detected and their accumulation, which may represent the length of the line.
 
-usage:
-from houghline import HoughLines
-np_array_lines = HoughLines(binary_image, rho=1, theta=np.pi/180)
+usage:     
+python setup.py    
+    
+from houghline import HoughLines               
+np_array_lines = HoughLines(binary_image, rho=1, theta=np.pi/180)                 
 
 the function returns a 2-D numpy array(shape=n*3).   
     
