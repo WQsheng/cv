@@ -9,7 +9,7 @@ python setup.py
 from houghline import HoughLines               
 np_array_lines = HoughLines(binary_image, rho=1, theta=np.pi/180)                 
 
-the function returns a 2-D numpy array(shape=n*3).   
+the function returns a 2-D numpy array(n rows*3 columns).   
     
 [[line_rho1, line_theta1, line_length1],   
  [line_rho2, line_theta2, line_length2],    
