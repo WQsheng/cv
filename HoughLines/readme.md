@@ -19,4 +19,4 @@ the function returns a 2-D numpy array(n rows*3 columns).
 np_array_lines[np_array_lines[:, 2] > threshold] just returns the lines greater than threshold, like the opencv HoughLines
 function does.
 
-Because it's written main in python, the total running time is about 2 times longer than the opencv function.
+Because it's written main in python, the total running time is about 120% of the opencv function.
